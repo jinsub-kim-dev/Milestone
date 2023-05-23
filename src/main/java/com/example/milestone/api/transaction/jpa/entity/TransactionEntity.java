@@ -6,6 +6,7 @@ import com.example.milestone.base.jpa.BaseTimeEntity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "transaction")
@@ -27,4 +28,7 @@ public class TransactionEntity extends BaseTimeEntity {
 
     @Column(name = "transaction_date")
     private LocalDateTime transactionDate;
+
+    @OneToMany(mappedBy = "transaction", fetch = FetchType.EAGER)
+    private List<TransactionTagEntity> transactionTags;
 }
