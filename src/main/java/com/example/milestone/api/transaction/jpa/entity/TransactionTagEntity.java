@@ -1,5 +1,6 @@
 package com.example.milestone.api.transaction.jpa.entity;
 
+import com.example.milestone.api.tag.jpa.entity.TagEntity;
 import com.example.milestone.base.jpa.BaseTimeEntity;
 
 import javax.persistence.*;

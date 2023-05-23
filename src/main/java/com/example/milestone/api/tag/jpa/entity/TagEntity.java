@@ -1,4 +1,4 @@
-package com.example.milestone.api.transaction.jpa.entity;
+package com.example.milestone.api.tag.jpa.entity;
 
 import com.example.milestone.base.jpa.BaseTimeEntity;
 
