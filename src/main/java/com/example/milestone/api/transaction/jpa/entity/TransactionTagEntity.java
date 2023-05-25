@@ -13,11 +13,11 @@ public class TransactionTagEntity extends BaseTimeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transactionTagId;
 
-    @ManyToOne
+    @ManyToOne(targetEntity = TransactionEntity.class)
     @JoinColumn(name = "transaction_id")
     private TransactionEntity transaction;
 
-    @ManyToOne
+    @ManyToOne(targetEntity = TagEntity.class)
     @JoinColumn(name = "tag_id")
     private TagEntity tag;
 }
